@@ -1,8 +1,6 @@
 
             document.addEventListener("DOMContentLoaded",()=>{   
-                // let b = [];
-                // updateStorage(b)
-                // localStorage.setItem('library',JSON.stringify(b));
+                localStorage.setItem("library",JSON.stringify([]))
                 let books = JSON.parse(localStorage.getItem("library"))
                 document.getElementById('submitForm').onsubmit = (e)=>{
                         e.preventDefault()
